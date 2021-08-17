@@ -35,6 +35,5 @@ cp .fehbg ~/.fehbg
 cp .config/i3/clipboard_fix.sh ~/.config/i3/clipboard_fix.sh
 
 echo "Done! Grab some wallpaper and run pywal -i filename to set your color scheme. To have the wallpaper set on every boot edit ~.fehbg"
+echo ".bash/.zshrc included in repo as well. Overwrite or merge to get PwnBox layout. Need to copy '.sh' files over to /opt as well."
 echo "After reboot: Select i3 on login, run lxappearance and select arc-dark"
-
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
