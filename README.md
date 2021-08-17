@@ -1,6 +1,6 @@
 # XCT Kali - PwnBox Update
 
-`xct/kali-clean` Desktop with my changes/additions.
+[xct/kali-clean](https://github.com/xct/kali-clean) with [theGuildHall/pwnbox](https://github.com/theGuildHall/pwnbox) PwnBox additions and some personal tweaks/changes.
 Check out my notes section here https://github.com/islanddog/notes
 
 ![image](https://user-images.githubusercontent.com/16761753/129801553-71174dac-2836-45e5-a669-8d1cba6216a2.png)
