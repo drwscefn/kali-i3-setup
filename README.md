@@ -1,4 +1,4 @@
-# Kali-Clean
+# XCT Kali - PwnBox Update
 
 `xct/kali-clean` Desktop with my changes/additions. 
 
