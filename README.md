@@ -6,7 +6,9 @@
 ```
 ./install.sh
 ```
-After the script is done reboot and select i3 (top right corner) on the login screen. Then open a terminal (`WIN+return`) run `lxappearance`and select ark-dark theme and change the icons to whatever you like (I used papyrus).
+After the script is done reboot and select i3 (top right corner) on the login screen. Then open a terminal (hotkey below) run `lxappearance`and select ark-dark theme and change the icons to whatever you like (I used papyrus).
+
+Added `.bashrc` and `.zshrc` to merge for HTB PwnBox feel. Also included `vpnbash.sh` and `vpnsever.sh` which need to be added to /opt/.
 
 ### Most Important
 | Command               |Description                    |
