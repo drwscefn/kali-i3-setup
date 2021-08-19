@@ -17,7 +17,7 @@ Second terminal window -
 
 Nerd fonts full repo takes forever to download/install. Grab a subset or kick it off during the secondary install. Once installed use **xct** notes below:
 
-**xct** - After the script is done reboot and select i3 (top right corner) on the login screen. Then open a terminal (hotkey below) run `lxappearance`and select ark-dark theme and change the icons to whatever you like (I used papyrus).
+**xct** - After the script is done reboot and select i3 (top right corner) on the login screen. Then open a terminal (hotkey below) run `lxappearance`and select ark-dark theme and change the icons to whatever you like (I used papyrus). Grab some wallpaper and run pywal -i filename to set your color scheme.
 
 ### Additional Notes
 
@@ -34,6 +34,7 @@ sudo mousepad /opt/vpnserver.sh
 ```
 
 #### Change Background
+**xct -** To have the wallpaper set on every boot edit ~.fehbg
 ```bash
 sudo mousepad ~/.fehbg
 ```
