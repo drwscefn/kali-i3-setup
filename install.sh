@@ -7,6 +7,13 @@ sudo apt-get install -y onedrive enum4linux nbtscan nikto nmap oscanner smbclien
 cargo install rustscan
 cargo install feroxbuster
 
+cd /opt/
+git clone https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite
+git clone https://github.com/rebootuser/LinEnum
+git clone https://github.com/M4ximuss/Powerless
+git clone https://github.com/r3motecontrol/Ghostpack-CompiledBinaries
+git clone https://github.com/ivan-sincek/php-reverse-shell.git
+git clone https://github.com/samratashok/nishang.git
 git clone https://github.com/jwilm/alacritty
 cd alacritty
 cargo build --release && sudo cp target/release/alacritty /usr/local/bin
@@ -36,6 +43,3 @@ sudo mv ~/.bashrc bashrc.bak && sudo mv ~/.zshrc zshrc.bak
 sudo cp .bashrc .zshrc ~/.
 sudo mv vpnbash.sh vpnserver.sh /opt/
 sudo mv htb.jpg htb2.jpg ~/.wallpaper
-
-echo "Done! Grab some wallpaper and run pywal -i filename to set your color scheme. To have the wallpaper set on every boot edit ~.fehbg"
-echo "After reboot: Select i3 on login, run lxappearance and select arc-dark"
