@@ -6,10 +6,6 @@ sudo apt-get install -y libxcb-render-util0-dev libxcb-shape0-dev libxcb-xfixes0
 sudo apt-get install -y onedrive enum4linux nbtscan nikto nmap oscanner smbclient smbmap smtp-user-enum snmp sslscan whatweb
 cargo install rustscan
 cargo install feroxbuster
-git clone https://github.com/ryanoasis/nerd-fonts.git
-cd nerd-fonts
-./install.sh
-cd ..
 
 git clone https://github.com/jwilm/alacritty
 cd alacritty
