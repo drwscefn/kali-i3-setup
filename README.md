@@ -6,12 +6,18 @@ Check out my notes section here https://github.com/islanddog/notes
 ![image](https://user-images.githubusercontent.com/16761753/129801553-71174dac-2836-45e5-a669-8d1cba6216a2.png)
 
 ## Installation
+Kick Off first -
+```
+./nerdfonts.sh
+```
+Second terminal window - 
 ```
 ./install.sh
 ```
-After the script is done reboot and select i3 (top right corner) on the login screen. Then open a terminal (hotkey below) run `lxappearance`and select ark-dark theme and change the icons to whatever you like (I used papyrus).
 
-Added `.bashrc` and `.zshrc` to merge for HTB PwnBox feel. Also included `vpnbash.sh` and `vpnsever.sh` which need to be added to /opt/.
+Nerd fonts full repo takes forever to download/install. Grab a subset or kick it off during the secondary install. Once installed use **xct** notes below:
+
+***xct** - After the script is done reboot and select i3 (top right corner) on the login screen. Then open a terminal (hotkey below) run `lxappearance`and select ark-dark theme and change the icons to whatever you like (I used papyrus).
 
 ### Most Important
 | Command               |Description                    |
