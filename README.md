@@ -7,30 +7,30 @@ Check out my notes section here https://github.com/islanddog/notes
 
 ## Installation
 Kick Off first -
-```
+```bash
 ./nerdfonts.sh
 ```
 Second terminal window - 
-```
+```bash
 ./install.sh
 ```
 
 ### Additional Notes
 
 #### Change Weather
-```
+```bash
 #Line 80 - Change to yours - https://wttr.in/
 sudo mousepad ~/.config/i3/i3blocks.conf
 ```
 
 #### VPN File Name
-```
+```bash
 #Line 3 - Change to name of your HTB VPN file.
 sudo mousepad /opt/vpnserver.sh
 ```
 
 #### Change Background
-```
+```bash
 sudo mousepad ~/.fehbg
 ```
 
