@@ -15,6 +15,10 @@ Second terminal window -
 ./install.sh
 ```
 
+Nerd fonts full repo takes forever to download/install. Grab a subset or kick it off during the secondary install. Once installed use **xct** notes below:
+
+**xct** - After the script is done reboot and select i3 (top right corner) on the login screen. Then open a terminal (hotkey below) run `lxappearance`and select ark-dark theme and change the icons to whatever you like (I used papyrus).
+
 ### Additional Notes
 
 #### Change Weather
@@ -33,10 +37,6 @@ sudo mousepad /opt/vpnserver.sh
 ```bash
 sudo mousepad ~/.fehbg
 ```
-
-Nerd fonts full repo takes forever to download/install. Grab a subset or kick it off during the secondary install. Once installed use **xct** notes below:
-
-**xct** - After the script is done reboot and select i3 (top right corner) on the login screen. Then open a terminal (hotkey below) run `lxappearance`and select ark-dark theme and change the icons to whatever you like (I used papyrus).
 
 ## i3 Hotkeys
 
