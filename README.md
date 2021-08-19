@@ -15,9 +15,30 @@ Second terminal window -
 ./install.sh
 ```
 
+### Additional Notes
+
+#### Change Weather
+```
+#Line 80 - Change to yours - https://wttr.in/
+sudo mousepad ~/.config/i3/i3blocks.conf
+```
+
+#### VPN File Name
+```
+#Line 3 - Change to name of your HTB VPN file.
+sudo mousepad /opt/vpnserver.sh
+```
+
+#### Change Background
+```
+sudo mousepad ~/.fehbg
+```
+
 Nerd fonts full repo takes forever to download/install. Grab a subset or kick it off during the secondary install. Once installed use **xct** notes below:
 
 **xct** - After the script is done reboot and select i3 (top right corner) on the login screen. Then open a terminal (hotkey below) run `lxappearance`and select ark-dark theme and change the icons to whatever you like (I used papyrus).
+
+## i3 Hotkeys
 
 ### Most Important
 | Command               |Description                    |
