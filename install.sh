@@ -31,7 +31,7 @@ cp .config/compton/compton.conf ~/.config/compton/compton.conf
 cp .config/rofi/config ~/.config/rofi/config
 cp .fehbg ~/.fehbg
 cp .config/i3/clipboard_fix.sh ~/.config/i3/clipboard_fix.sh
-sudo mv .bashrc bashrc.bak && sudo mv .zshrc zshrc.bak
+sudo mv ~/.bashrc bashrc.bak && sudo mv ~/.zshrc zshrc.bak
 sudo cp .bashrc .zshrc ~/.
 sudo mv vpnbash.sh vpnserver.sh /opt/
 
