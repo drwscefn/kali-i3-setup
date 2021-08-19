@@ -24,6 +24,7 @@ mkdir -p ~/.config/i3
 mkdir -p ~/.config/compton
 mkdir -p ~/.config/rofi
 mkdir -p ~/.config/alacritty
+mkdir -p ~/.wallpaper
 cp .config/i3/config ~/.config/i3/config
 cp .config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 cp .config/i3/i3blocks.conf ~/.config/i3/i3blocks.conf
@@ -34,6 +35,7 @@ cp .config/i3/clipboard_fix.sh ~/.config/i3/clipboard_fix.sh
 sudo mv ~/.bashrc bashrc.bak && sudo mv ~/.zshrc zshrc.bak
 sudo cp .bashrc .zshrc ~/.
 sudo mv vpnbash.sh vpnserver.sh /opt/
+sudo mv htb.jpg htb2.jpg ~/.wallpaper
 
 echo "Done! Grab some wallpaper and run pywal -i filename to set your color scheme. To have the wallpaper set on every boot edit ~.fehbg"
 echo "After reboot: Select i3 on login, run lxappearance and select arc-dark"
