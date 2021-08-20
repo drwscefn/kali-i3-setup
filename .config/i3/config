@@ -7,6 +7,9 @@ bindsym $mod+n exec i3-input -F 'Rename workspace to "%s"' -P 'New name(add #:) 
 # is used in the bar {} block below.
 font pango:RobotoMono Nerd Font Regular 9
 
+#Install network-manager-applet with your package manager
+exec_always --no-startup-id exec nm-applet etc
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
