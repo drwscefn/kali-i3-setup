@@ -105,9 +105,10 @@ sudo mousepad ~/.config/i3/i3blocks.conf
 | `WIN` + Shift + D  | Focus child container  |
 
 ### Resize Window **10px/per**
-| Command    |Description   |
-|------------|--------------|
-| `WIN` + J  | Shrink Width |
-| `WIN` + K  | Grow Height  |
-| `WIN` + L | Shrink Height |
-| `WIN` + ; | Grow Width    |
+| Command    |Description    |
+|------------|---------------|
+| `WIN` + R  | Enter Resize  |
+| `WIN` + J  | Shrink Width  |
+| `WIN` + K  | Grow Height   |
+| `WIN` + L  | Shrink Height |
+| `WIN` + ;  | Grow Width    |
