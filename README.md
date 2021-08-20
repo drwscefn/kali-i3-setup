@@ -60,7 +60,7 @@ sudo mousepad ~/.config/i3/i3blocks.conf
 | Command               |Description                    |
 |-----------------------|-------------------------------|
 | `WIN`                 | Default modifier key.         |
-| `Ctrl` + N*           | Spawn new terminal in PWD     |
+| `Ctrl` + N*           | Spawn new terminal in PWD.    |
 | `WIN` + D             | Launch a Program.             |
 | `WIN` + Shift + Q     | Kill a focused window.        |
 | Mouse + `WIN`         | Drag floating windows around. |
