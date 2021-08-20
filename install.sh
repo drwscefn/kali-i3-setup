@@ -15,6 +15,7 @@ git clone https://github.com/r3motecontrol/Ghostpack-CompiledBinaries
 git clone https://github.com/ivan-sincek/php-reverse-shell.git
 git clone https://github.com/samratashok/nishang.git
 git clone https://github.com/jwilm/alacritty
+git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git
 cd alacritty
 cargo build --release && sudo cp target/release/alacritty /usr/local/bin
 cd ..
