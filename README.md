@@ -82,10 +82,10 @@ sudo mousepad ~/.fehbg
 
 
 ### Other
-| Command    |Description     |
-|------------|----------------|
-| `WIN` + A  | Focus parent container |
-| `WIN` + D  | Focus child container  |
+| Command            |Description             |
+|--------------------|------------------------|
+| `WIN` + A          | Focus parent container |
+| `WIN` + Shift + D  | Focus child container  |
 
 ### Resize Window **10px/per**
 | Command    |Description   |
