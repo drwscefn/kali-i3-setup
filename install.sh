@@ -14,8 +14,9 @@ git clone https://github.com/M4ximuss/Powerless
 git clone https://github.com/r3motecontrol/Ghostpack-CompiledBinaries
 git clone https://github.com/ivan-sincek/php-reverse-shell.git
 git clone https://github.com/samratashok/nishang.git
-git clone https://github.com/jwilm/alacritty
 git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git
+sudo mv zsh-autocomplete /usr/share/
+git clone https://github.com/jwilm/alacritty
 cd alacritty
 cargo build --release && sudo cp target/release/alacritty /usr/local/bin
 cd ..
@@ -40,7 +41,5 @@ cp .config/compton/compton.conf ~/.config/compton/compton.conf
 cp .config/rofi/config ~/.config/rofi/config
 cp .fehbg ~/.fehbg
 cp .config/i3/clipboard_fix.sh ~/.config/i3/clipboard_fix.sh
-sudo mv ~/.bashrc bashrc.bak && sudo mv ~/.zshrc zshrc.bak
-sudo cp .bashrc .zshrc ~/.
 sudo mv vpnbash.sh vpnserver.sh /opt/
 sudo mv htb.jpg htb2.jpg ~/.wallpaper
