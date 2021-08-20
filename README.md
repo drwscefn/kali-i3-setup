@@ -48,6 +48,12 @@ sudo chmod +x /opt/vpnbash.sh vpnserver.sh
 sudo mousepad /opt/vpnserver.sh
 ```
 
+#### Battery (laptop related)
+```bash
+#Line 60-66 - Uncomment to show battery info.
+sudo mousepad ~/.config/i3/i3blocks.conf
+```
+
 ## i3 Hotkeys
 
 ### Most Important
