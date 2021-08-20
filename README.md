@@ -60,6 +60,7 @@ sudo mousepad ~/.config/i3/i3blocks.conf
 | Command               |Description                    |
 |-----------------------|-------------------------------|
 | `WIN`                 | Default modifier key.         |
+| 'Ctrl' + N*           | Spawn new terminal in PWD     |
 | `WIN` + D             | Launch a Program.             |
 | `WIN` + Shift + Q     | Kill a focused window.        |
 | Mouse + `WIN`         | Drag floating windows around. |
@@ -72,6 +73,7 @@ sudo mousepad ~/.config/i3/i3blocks.conf
 | `WIN` + `Shift` + R   | Restart i3 - Keep UI/Session. |
 | `WIN` + `Shift` + E   | Kill i3 - Logs out of Session.|
 | `WIN` + P             | Take Screenshot (FlameShot).  |
+#### ***Ctrl+N must be used inside a terminal window - Alacritty**.
 
 ### Container Layout
 | Command    |Description      |
