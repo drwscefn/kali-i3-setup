@@ -35,8 +35,17 @@ sudo mousepad /opt/vpnserver.sh
 
 #### Change Background
 **xct -** To have the wallpaper set on every boot edit ~.fehbg
+Two wallpapers available from **theGuildHall*** if you want the HTB feel in ~/.wallpapers.
 ```bash
 sudo mousepad ~/.fehbg
+```
+
+#### .bashrc and .zshrc
+Both configs are available in the GitHub directory. Merge/Overwrite for the HTB feel. Will require you to give execute rights to both ```vpnserver.sh``` and ```vpnbash.sh```.
+```bash
+sudo chmod +x /opt/vpnbash.sh vpnserver.sh
+#Change line 3 to HTB VPN file location.
+sudo mousepad /opt/vpnserver.sh
 ```
 
 ## i3 Hotkeys
