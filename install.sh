@@ -26,6 +26,7 @@ cd i3-gaps && mkdir -p build && cd build && meson ..
 ninja
 sudo ninja install
 cd ../..
+cd kali-clean-pwnbox
 
 pip3 install pywal
 
