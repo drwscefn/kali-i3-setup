@@ -14,6 +14,7 @@ git clone https://github.com/M4ximuss/Powerless
 git clone https://github.com/r3motecontrol/Ghostpack-CompiledBinaries
 git clone https://github.com/ivan-sincek/php-reverse-shell.git
 git clone https://github.com/samratashok/nishang.git
+git clone https://github.com/danielmiessler/SecLists.git
 git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git
 sudo mv zsh-autocomplete /usr/share/
 git clone https://github.com/jwilm/alacritty
