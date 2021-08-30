@@ -17,6 +17,8 @@ alias vdir='vdir --color=auto'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
+alias multipull='cd /opt && find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} pull \;'
+alais mouse='sudo mousepad'
 #####################################################
 # Auto completion / suggestion
 # Mixing zsh-autocomplete and zsh-autosuggestions
