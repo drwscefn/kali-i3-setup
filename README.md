@@ -51,6 +51,7 @@ sudo mousepad /opt/vpnserver.sh
 #### Battery (laptop related)
 ```bash
 #Line 60-66 - Uncomment to show battery info.
+#Updated to pull directly from acpi as my battery information was not displaying correctly.
 sudo mousepad ~/.config/i3/i3blocks.conf
 ```
 
