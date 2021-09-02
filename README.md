@@ -6,13 +6,10 @@ Check out my notes section here https://github.com/islanddog/notes
 ![image](https://user-images.githubusercontent.com/16761753/129801553-71174dac-2836-45e5-a669-8d1cba6216a2.png)
 
 ## Installation
-Kick Off first -
-```bash
-./nerdfonts.sh
-```
-Second terminal window - 
 ```bash
 ./install.sh
+#Start nerd fonts after first installation (20min install)
+./nerdfonts.sh
 ```
 
 Nerd fonts full repo takes forever to download/install. Grab a subset or kick it off during the secondary install. Once installed use **xct** notes below:
@@ -27,10 +24,16 @@ Nerd fonts full repo takes forever to download/install. Grab a subset or kick it
 sudo mousepad ~/.config/i3/i3blocks.conf
 ```
 
-#### VPN File Name
+#### VPN File Name (used for .zshrc/.bashrc UI)
 ```bash
 #Line 3 - Change to name of your HTB VPN file.
 sudo mousepad /opt/vpnserver.sh
+```
+
+#### .bashrc and .zshrc
+Both configs are available in the Install directory. Merge/Overwrite for the HTB feel.
+```bash
+sudo mv -b .bashrc .zshrc ~/.
 ```
 
 #### Change Background
@@ -40,17 +43,8 @@ Two wallpapers available from **theGuildHall*** if you want the HTB feel in ~/.w
 sudo mousepad ~/.fehbg
 ```
 
-#### .bashrc and .zshrc
-Both configs are available in the GitHub directory. Merge/Overwrite for the HTB feel. Will require you to give execute rights to both ```vpnserver.sh``` and ```vpnbash.sh```.
-```bash
-sudo chmod +x /opt/vpnbash.sh vpnserver.sh
-#Change line 3 to HTB VPN file location.
-sudo mousepad /opt/vpnserver.sh
-```
-
 #### Battery (laptop related)
 ```bash
-#Line 60-66 - Uncomment to show battery info.
 #Updated to pull directly from acpi as my battery information was not displaying correctly.
 sudo mousepad ~/.config/i3/i3blocks.conf
 ```
