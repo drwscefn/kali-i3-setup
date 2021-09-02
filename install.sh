@@ -45,11 +45,11 @@ sudo git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.gi
 sudo mv zsh-autocomplete /usr/share/
 sudo git clone https://github.com/jwilm/alacritty
 cd alacritty
-cargo build --release && sudo cp target/release/alacritty /usr/local/bin
+sudo cargo build --release && sudo cp target/release/alacritty /usr/local/bin
 cd ..
 
 sudo git clone https://www.github.com/Airblader/i3 i3-gaps
-cd i3-gaps && mkdir -p build && cd build && meson ..
+cd i3-gaps && sudo mkdir -p build && cd build && meson ..
 ninja
 sudo ninja install
 pip3 install pywal
