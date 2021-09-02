@@ -31,6 +31,7 @@ cargo install rustscan feroxbuster
 echo -e "\e[41mNOTICE\e[0m"
 echo "Make sure to update your cargo directory in PATH if you are using my .zshrc config"
 read -s -n 1 -p "Press ANY key to continue."
+clear
 
 cd /opt/
 sudo git clone https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite peass
