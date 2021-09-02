@@ -1,9 +1,10 @@
 #!/bin/bash
 
-echo "--------------------------------------------"
-echo -e "PwnBox Install - \e[41mBased off xct/clean and theGuildHall/pwnbox\e[0m"
-echo -e "Updated 09.02.2021"
-echo -e "\e[0m--------------------------------------------"
+echo "\e[1mB--------------------------------------------\e[0m"
+echo -e "\e[41mPwnBox Install - Based off xct/clean and theGuildHall/pwnbox\e[0m"
+echo -e "\e[4mUpdated 09.02.2021 \e[24m"
+echo "\e[1mB--------------------------------------------\e[0m"
+read -s -n 1 -p "Press ANY key to continue."
 
 mkdir -p ~/.config/i3
 mkdir -p ~/.config/compton
