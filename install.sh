@@ -2,8 +2,8 @@
 
 echo -e "\e[41mPwnBox Install\e[0m"
 echo -e "\e[41mBased off xct/clean and theGuildHall/pwnbox\e[0m"
-echo -e "\e[4mUpdated 09.02.2021 \e[24m"
-echo -e "\e[4mBy:Christopher Soehnlein | https://IslandDog.ky \e[24m"
+echo -e "\e[41mUpdated 09.02.2021 \e[24m"
+echo -e "\e[41mBy:Christopher Soehnlein | https://IslandDog.ky \e[24m"
 read -s -n 1 -p "Press ANY key to continue."
 
 mkdir -p ~/.config/i3
