@@ -5,19 +5,23 @@ echo "https://islanddog.ky"
 # Prompt
 if [[ $(/opt/vpnbash.sh) == *.10.* ]]; then PROMPT="%F{red}┌[%f%F{green}%D{$(/opt/vpnserver.sh)}%f%F{red}]─[%f%F{green}%D{$(/opt/vpnbash.sh)}%f%F{red}][%B%F{%(#.red.blue)}%n%(#.💀.㉿)%m%b%F{%(#.blue.red)}]─[%f%F{magenta}%d%f%F{red}]%f"$'\n'"%F{red}└╼%f%F{green}[%f%F{yellow}★%f]%f%F{yellow}$%f" ;else PROMPT="%F{red}┌[%B%F{%(#.red.blue)}%n%(#.💀.㉿)%m%b%F{%(#.blue.red)}]─[%f%F{magenta}%d%f%F{red}]%f"$'\n'"%F{red}└╼%f%F{green}[%f%F{yellow}★%f]%f%F{yellow}$%f" ;fi
 
-
-
 # Export PATH$
-export PATH=~/.local/bin:/usr/bin:/usr/sandbox/:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin:/home/kali/.cargo/bin:$PATH
+export PATH=~/.local/bin:/usr/bin:/usr/sandbox/:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin:/home/crx/.cargo/bin:$PATH
 
 # alias
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    alias dir='dir --color=auto'
+    alias vdir='vdir --color=auto'
+
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
 alias ssh='TERM=xterm-color;PATH=~/.local/bin:/usr/bin:/usr/sandbox/:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin:/home/kali/.cargo/bin:$PATH ssh'
-alias dir='dir --color=auto'
-alias vdir='vdir --color=auto'
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
-alias multipull='sudo cd /opt && find . -mindepth 1 -maxdepth 1 -type d -print -exec sudo git -C {} pull \;'
+alias multipull='cd /opt && sudo find . -mindepth 1 -maxdepth 1 -type d -print -exec sudo git -C {} pull \;'
 alias mouse='sudo mousepad'
 #####################################################
 # Auto completion / suggestion
@@ -34,7 +38,6 @@ zstyle ':autocomplete:tab:*' widget-style menu-select
 zstyle ':autocomplete:*' min-input 2
 bindkey $key[Up] up-line-or-history
 bindkey $key[Down] down-line-or-history
-
 
 ##################################################
 # Fish like syntax highlighting
