@@ -3,7 +3,9 @@
 [xct/kali-clean](https://github.com/xct/kali-clean) with [theGuildHall/pwnbox](https://github.com/theGuildHall/pwnbox) PwnBox additions and some personal tweaks/changes.
 Check out my notes section here https://github.com/islanddog/notes
 
-![image](https://user-images.githubusercontent.com/16761753/129801553-71174dac-2836-45e5-a669-8d1cba6216a2.png)
+![image](https://user-images.githubusercontent.com/16761753/132256475-1dabd629-b4a1-45c7-9698-387232f54add.png)
+
+![image](https://user-images.githubusercontent.com/16761753/132256835-b6050c7a-6c36-416d-9fdc-1fb001ed0095.png)
 
 ## Installation
 ```bash
