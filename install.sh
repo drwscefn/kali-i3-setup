@@ -27,6 +27,7 @@ sudo apt-get install -y libxcb-shape0-dev libxcb-keysyms1-dev libpango1.0-dev li
 sudo apt-get install -y libxcb-render-util0-dev libxcb-shape0-dev libxcb-xfixes0-dev 
 sudo apt-get install -y gobuster onedrive enum4linux nbtscan nikto nmap oscanner smbclient smbmap smtp-user-enum snmp sslscan whatweb
 curl https://sh.rustup.rs -sSf | sh
+source $HOME/.cargo/env
 cargo install rustscan feroxbuster
 echo -e "\e[41mNOTICE\e[0m"
 echo "Make sure to update your cargo directory in PATH if you are using my .zshrc config"
