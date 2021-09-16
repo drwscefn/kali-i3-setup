@@ -27,7 +27,6 @@ sudo apt-get install -y libxcb-shape0-dev libxcb-keysyms1-dev libpango1.0-dev li
 sudo apt-get install -y libxcb-render-util0-dev libxcb-shape0-dev libxcb-xfixes0-dev 
 sudo apt-get install -y gobuster onedrive enum4linux nbtscan nikto nmap oscanner smbclient smbmap smtp-user-enum snmp sslscan whatweb
 curl https://sh.rustup.rs -sSf | sh
-source $HOME/.cargo/env
 cargo install rustscan feroxbuster
 echo -e "\e[41mNOTICE\e[0m"
 echo "Make sure to update your cargo directory in PATH if you are using my .zshrc config"
@@ -51,13 +50,20 @@ sudo cargo build --release && sudo cp target/release/alacritty /usr/local/bin
 cd ..
 
 sudo git clone https://www.github.com/Airblader/i3 i3-gaps
-cd i3-gaps && sudo mkdir -p build && cd build && meson ..
-ninja
+cd i3-gaps && sudo mkdir -p build && cd build && sudo meson ..
+sudo ninja
 sudo ninja install
 pip3 install pywal
 
 echo -e "\e[41mNOTICE\e[0m"
-echo "After the script is done reboot and select i3 (top right corner) on the login screen. Then open a terminal (hotkey below) and read the rest of the README on GitHub for further configuration options."
-echo "Use multipull (if using my .zshrc) or command 'cd /opt && find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} pull \;' to update all repositories"
+echo "Now installing Nerd Fonts. This process can take 20-25minutes."
+read -s -n 1 -p "Press ANY key to continue."
+sudo git clone https://github.com/ryanoasis/nerd-fonts.git
+cd nerd-fonts
+sudo chmod +x install.sh
+./install.sh
+
+echo -e "\e[41mNOTICE\e[0m"
+echo "After the script is done a reboot will occur. On the login screen select i3 (top right corner) on the login screen. Once on the desktop use the Github readme for more information."
 read -s -n 1 -p "Press ANY key to continue."
 sudo reboot
