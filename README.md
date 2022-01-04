@@ -7,7 +7,7 @@ Check out my notes section here https://github.com/islanddog/notes
 
 ![image](https://user-images.githubusercontent.com/16761753/132256835-b6050c7a-6c36-416d-9fdc-1fb001ed0095.png)
 
-## Installation Fresh Install (https://www.kali.org/blog/kali-linux-2021-3-release/)
+## Before You Begin!! (Bundled into script)
 ```bash
 sudo apt-get install build-essential
 sudo apt-get install build-essential checkinstall
