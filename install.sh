@@ -57,6 +57,9 @@ sudo git clone https://github.com/ivan-sincek/php-reverse-shell.git webshells
 sudo git clone https://github.com/samratashok/nishang.git nishang
 sudo git clone https://github.com/danielmiessler/SecLists.git seclists
 sudo git clone https://github.com/itm4n/PrivescCheck.git privesccheck
+git clone https://github.com/stealthcopter/deepce.git docker-enum
+git clone https://github.com/dirkjanm/krbrelayx.git krbrelayx
+git clone https://github.com/Anon-Exploiter/SUID3NUM.git suidenum
 sudo git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git
 sudo mv zsh-autocomplete /usr/share/
 sudo git clone https://github.com/jwilm/alacritty
