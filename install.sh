@@ -44,7 +44,6 @@ sudo mv htb.jpg htb2.jpg ~/.wallpaper
 curl https://sh.rustup.rs -sSf | sh
 cargo install rustscan feroxbuster
 echo -e "\e[41mNOTICE\e[0m"
-echo "Make sure to update your cargo directory in PATH if you are using my .zshrc config"
 read -s -n 1 -p "Press ANY key to continue."
 clear
 
