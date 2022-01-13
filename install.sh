@@ -23,10 +23,18 @@ sudo apt-get install -y build-essential checkinstall
 sudo apt-get install -y autoconf automake autotools-dev m4
 sudo apt-get install -y libx11-dev
 sudo apt-get install -y freeglut3-dev
-sudo apt-get install -y arandr flameshot arc-theme feh i3blocks i3status i3 i3-wm lxappearance python3-pip rofi unclutter cargo compton papirus-icon-theme imagemagick
+sudo apt-get install -y arandr 
+sudo apt-get install -y flameshot
+sudo apt-get install -y python3-pip rofi
+sudo apt-get install -y unclutter compton imagemagick
+sudo apt-get install -y arc-theme papirus-icon-theme
+sudo apt-get install -y feh
+sudo apt-get install -y i3blocks i3status i3 i3-wm
 sudo apt-get install -y libxcb-shape0-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev xcb libxcb1-dev libxcb-icccm4-dev libyajl-dev libev-dev libxcb-xkb-dev libxcb-cursor-dev libxkbcommon-dev libxcb-xinerama0-dev libxkbcommon-x11-dev libstartup-notification0-dev libxcb-randr0-dev libxcb-xrm0 libxcb-xrm-dev autoconf meson
 sudo apt-get install -y libxcb-render-util0-dev libxcb-shape0-dev libxcb-xfixes0-dev 
 sudo apt-get install -y gobuster onedrive enum4linux nbtscan nikto nmap oscanner smbclient smbmap smtp-user-enum snmp sslscan whatweb
+sudo apt-get install -y cargo
+source $HOME/.cargo/env
 
 mkdir -p ~/.config/i3
 mkdir -p ~/.config/compton
@@ -45,7 +53,6 @@ sudo chmod +x /opt/vpn*.sh
 sudo mv htb.jpg htb2.jpg ~/.wallpaper
 
 curl https://sh.rustup.rs -sSf | sh
-source $HOME/.cargo/env
 cargo install rustscan feroxbuster
 echo -e "\e[41mNOTICE\e[0m"
 read -s -n 1 -p "Press ANY key to continue."
@@ -74,7 +81,7 @@ sudo git clone https://www.github.com/Airblader/i3 i3-gaps
 cd i3-gaps && sudo mkdir -p build && cd build && sudo meson ..
 sudo ninja
 sudo ninja install
-pip3 install pywal
+python3-pip install pywal
 
 echo -e "\e[41mNOTICE\e[0m"
 echo "Now installing Nerd Fonts. This process can take 20-25minutes."
