@@ -2,7 +2,7 @@
 
 echo -e "\e[41mPwnBox Install\e[0m"
 echo -e "\e[41mBased off xct/clean and theGuildHall/pwnbox\e[0m"
-echo -e "\e[41mUpdated 01.04.2022 \e[24m"
+echo -e "\e[41mUpdated 01.13.2022 \e[24m"
 echo -e "\e[41mBy:Christopher Soehnlein | https://IslandDog.ky \e[0m"
 read -s -n 1 -p "Press ANY key to continue."
 echo ""
@@ -17,6 +17,8 @@ echo -e "deb-src http://security.kali.org/kali-security kali/updates main contri
 read -s -n 1 -p "Press ANY key after copying the 4 lines above. Use Ctrl+Shift+V to Paste. Use Ctrl+X to Save in Nano."
 echo -e ""
 sudo nano /etc/apt/sources.list
+clear
+cat /etc/apt/sources.list
 read -s -n 1 -p "Confirm this has been copied before proceeding with the install."
 
 sudo apt-get install -y build-essential checkinstall
