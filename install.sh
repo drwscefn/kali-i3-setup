@@ -8,7 +8,7 @@ read -s -n 1 -p "Press ANY key to continue.
 echo ""
 
 #KaliLinux New Installs
-read -s -n 1 -p "Nano is about to launch, copy the following before proceeding with the install"
+echo -e "Nano is about to launch, copy the following before proceeding with the install"
 echo ""
 echo -e "deb http://http.kali.org/kali kali main contrib non-free"
 echo -e "deb-src http://http.kali.org/kali kali main contrib non-free"
