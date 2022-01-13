@@ -14,7 +14,8 @@ echo -e "deb http://http.kali.org/kali kali main contrib non-free"
 echo -e "deb-src http://http.kali.org/kali kali main contrib non-free"
 echo -e "deb http://security.kali.org/kali-security kali/updates main contrib non-free"
 echo -e "deb-src http://security.kali.org/kali-security kali/updates main contrib non-free"
-read -s -n 1 -p "Press ANY key after copying the 4 lines above. Use Ctrl+X to save in Nano."
+read -s -n 1 -p "Press ANY key after copying the 4 lines above. Use Ctrl+Shift+V to Paste. Use Ctrl+X to Save in Nano."
+echo -e ""
 sudo nano /etc/apt/sources.list
 read -s -n 1 -p "Confirm this has been copied before proceeding with the install."
 
