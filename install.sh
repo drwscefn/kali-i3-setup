@@ -45,6 +45,7 @@ sudo chmod +x /opt/vpn*.sh
 sudo mv htb.jpg htb2.jpg ~/.wallpaper
 
 curl https://sh.rustup.rs -sSf | sh
+source $HOME/.cargo/env
 cargo install rustscan feroxbuster
 echo -e "\e[41mNOTICE\e[0m"
 read -s -n 1 -p "Press ANY key to continue."
@@ -66,7 +67,6 @@ sudo git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.gi
 sudo mv zsh-autocomplete /usr/share/
 sudo git clone https://github.com/jwilm/alacritty
 cd alacritty
-source $HOME/.cargo/env
 sudo cargo build --release && sudo cp target/release/alacritty /usr/local/bin
 cd ..
 
