@@ -89,7 +89,7 @@ sudo mousepad ~/.config/i3/i3blocks.conf
 | `WIN` + `Shift` + R   | Restart i3 - Keep UI/Session. |
 | `WIN` + `Shift` + E   | Kill i3 - Logs out of Session.|
 | `WIN` + P             | Take Screenshot (FlameShot).  |
-#### ***Ctrl+N must be used inside a terminal window - Alacritty**.
+#### *Must be used inside a terminal window (Alacritty).
 
 ### Container Layout
 | Command    |Description      |
