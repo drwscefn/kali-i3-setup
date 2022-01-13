@@ -7,7 +7,7 @@ echo -e "\e[41mBy:Christopher Soehnlein | https://IslandDog.ky \e[0m"
 read -s -n 1 -p "Press ANY key to continue.
 echo ""
 
-#KaliLinux New Installs
+#Kali Linux 2022 Install
 echo -e "Nano is about to launch, copy the following before proceeding with the install"
 echo ""
 echo -e "deb http://http.kali.org/kali kali main contrib non-free"
@@ -19,11 +19,10 @@ echo -e ""
 sudo nano /etc/apt/sources.list
 read -s -n 1 -p "Confirm this has been copied before proceeding with the install."
 
-sudo apt-get install build-essential
-sudo apt-get install build-essential checkinstall
-sudo apt-get install autoconf automake autotools-dev m4
-sudo apt-get install libx11-dev
-sudo apt-get install freeglut3-dev
+sudo apt-get install -y build-essential checkinstall
+sudo apt-get install -y autoconf automake autotools-dev m4
+sudo apt-get install -y libx11-dev
+sudo apt-get install -y freeglut3-dev
 sudo apt-get install -y arandr flameshot arc-theme feh i3blocks i3status i3 i3-wm lxappearance python3-pip rofi unclutter cargo compton papirus-icon-theme imagemagick
 sudo apt-get install -y libxcb-shape0-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev xcb libxcb1-dev libxcb-icccm4-dev libyajl-dev libev-dev libxcb-xkb-dev libxcb-cursor-dev libxkbcommon-dev libxcb-xinerama0-dev libxkbcommon-x11-dev libstartup-notification0-dev libxcb-randr0-dev libxcb-xrm0 libxcb-xrm-dev autoconf meson
 sudo apt-get install -y libxcb-render-util0-dev libxcb-shape0-dev libxcb-xfixes0-dev 
@@ -67,6 +66,7 @@ sudo git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.gi
 sudo mv zsh-autocomplete /usr/share/
 sudo git clone https://github.com/jwilm/alacritty
 cd alacritty
+source $HOME/.cargo/env
 sudo cargo build --release && sudo cp target/release/alacritty /usr/local/bin
 cd ..
 
