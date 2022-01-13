@@ -4,7 +4,7 @@ echo -e "\e[41mPwnBox Install\e[0m"
 echo -e "\e[41mBased off xct/clean and theGuildHall/pwnbox\e[0m"
 echo -e "\e[41mUpdated 01.04.2022 \e[24m"
 echo -e "\e[41mBy:Christopher Soehnlein | https://IslandDog.ky \e[0m"
-read -s -n 1 -p "Press ANY key to continue.
+read -s -n 1 -p "Press ANY key to continue."
 echo ""
 
 #Kali Linux 2022 Install
