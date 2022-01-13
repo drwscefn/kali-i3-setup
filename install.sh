@@ -9,11 +9,11 @@ echo ""
 
 #KaliLinux New Installs
 read -s -n 1 -p "Nano is about to launch, copy the following before proceeding with the install"
-sudo nano /etc/apt/sources.list
 echo -e "deb http://http.kali.org/kali kali main contrib non-free"
 echo -e "deb-src http://http.kali.org/kali kali main contrib non-free"
 echo -e "deb http://security.kali.org/kali-security kali/updates main contrib non-free"
 echo -e "deb-src http://security.kali.org/kali-security kali/updates main contrib non-free"
+sudo nano /etc/apt/sources.list
 read -s -n 1 -p "Confirm this has been copied before proceeding with the install."
 
 sudo apt-get install build-essential
