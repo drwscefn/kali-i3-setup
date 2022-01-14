@@ -19,7 +19,7 @@ echo -e ""
 sudo nano /etc/apt/sources.list
 clear
 cat /etc/apt/sources.list
-read -s -n 1 -p "Confirm this has been copied before proceeding with the install."
+read -s -n 1 -p "Confirm you see the items that were copied earlier before proceeding with the install."
 
 sudo apt-get install -y build-essential checkinstall
 sudo apt-get install -y autoconf automake autotools-dev m4
