@@ -53,6 +53,7 @@ sudo mv .fehbg ~/.fehbg
 sudo mv .config/i3/clipboard_fix.sh ~/.config/i3/clipboard_fix.sh
 sudo mv vpnbash.sh vpnserver.sh /opt/
 sudo chmod +x /opt/vpn*.sh
+sudo chmod +x nerdfonts.sh
 sudo mv htb.jpg htb2.jpg ~/.wallpaper
 clear
 echo -e "\e[41mNOTICE\e[0m"
