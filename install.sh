@@ -44,6 +44,7 @@ mkdir -p ~/.config/compton
 mkdir -p ~/.config/rofi
 mkdir -p ~/.config/alacritty
 mkdir -p ~/.wallpaper
+sudo mv .rustscan.toml ~
 sudo mv .config/i3/config ~/.config/i3/config
 sudo mv .config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 sudo mv .config/i3/i3blocks.conf ~/.config/i3/i3blocks.conf
