@@ -2,7 +2,7 @@
 
 echo -e "\e[41mPwnBox Install\e[0m"
 echo -e "\e[41mBased off xct/clean and theGuildHall/pwnbox\e[0m"
-echo -e "\e[41mUpdated 01.13.2022 \e[24m"
+echo -e "\e[41mUpdated 01.14.2022 \e[24m"
 echo -e "\e[41mBy:Christopher Soehnlein | https://IslandDog.ky \e[0m"
 read -s -n 1 -p "Press ANY key to continue."
 echo ""
@@ -25,6 +25,7 @@ sudo apt-get install -y build-essential checkinstall
 sudo apt-get install -y autoconf automake autotools-dev m4
 sudo apt-get install -y libx11-dev
 sudo apt-get install -y freeglut3-dev
+sudo apt-get install -y jq
 sudo apt-get install -y arandr 
 sudo apt-get install -y flameshot
 sudo apt-get install -y python3-pip rofi
@@ -43,25 +44,33 @@ mkdir -p ~/.config/compton
 mkdir -p ~/.config/rofi
 mkdir -p ~/.config/alacritty
 mkdir -p ~/.wallpaper
-sudo cp .config/i3/config ~/.config/i3/config
-sudo cp .config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
-sudo cp .config/i3/i3blocks.conf ~/.config/i3/i3blocks.conf
-sudo cp .config/compton/compton.conf ~/.config/compton/compton.conf
-sudo cp .config/rofi/config ~/.config/rofi/config
-sudo cp .fehbg ~/.fehbg
-sudo cp .config/i3/clipboard_fix.sh ~/.config/i3/clipboard_fix.sh
+sudo mv .config/i3/config ~/.config/i3/config
+sudo mv .config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
+sudo mv .config/i3/i3blocks.conf ~/.config/i3/i3blocks.conf
+sudo mv .config/compton/compton.conf ~/.config/compton/compton.conf
+sudo mv .config/rofi/config ~/.config/rofi/config
+sudo mv .fehbg ~/.fehbg
+sudo mv .config/i3/clipboard_fix.sh ~/.config/i3/clipboard_fix.sh
 sudo mv vpnbash.sh vpnserver.sh /opt/
 sudo chmod +x /opt/vpn*.sh
 sudo mv htb.jpg htb2.jpg ~/.wallpaper
-
+clear
+echo -e "\e[41mNOTICE\e[0m"
+read -s -n 1 -p "Beginning tool installs. Press ANY key to continue."
 curl https://sh.rustup.rs -sSf | sh
 cargo install rustscan feroxbuster
-echo -e "\e[41mNOTICE\e[0m"
-read -s -n 1 -p "Press ANY key to continue."
-clear
-
-cd /opt/
-sudo git clone https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite peass
+sudo curl -sL https://api.github.com/repos/carlospolop/PEASS-ng/releases/latest | jq -r ".assets[].browser_download_url" >> peass
+sudo curl -sL https://api.github.com/repos/DominicBreuker/pspy/releases/latest | jq -r ".assets[].browser_download_url" >> pspy
+sudo mkdir /opt/peass
+sudo mkdir /opt/pspy
+sudo mv peass /opt/peass
+sudo mv pspy /opt/pspy
+cd /opt/peass
+sudo wget -i peass
+cd ..
+cd /opt/pspy
+sudo wget -i pspy
+cd ..
 sudo git clone https://github.com/rebootuser/LinEnum linenum
 sudo git clone https://github.com/M4ximuss/Powerless powerless
 sudo git clone https://github.com/r3motecontrol/Ghostpack-CompiledBinaries ghost
