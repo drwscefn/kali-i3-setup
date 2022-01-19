@@ -38,7 +38,7 @@ sudo apt-get install -y feh
 sudo apt-get install -y i3blocks i3status i3 i3-wm
 sudo apt-get install -y libxcb-shape0-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev xcb libxcb1-dev libxcb-icccm4-dev libyajl-dev libev-dev libxcb-xkb-dev libxcb-cursor-dev libxkbcommon-dev libxcb-xinerama0-dev libxkbcommon-x11-dev libstartup-notification0-dev libxcb-randr0-dev libxcb-xrm0 libxcb-xrm-dev autoconf meson
 sudo apt-get install -y libxcb-render-util0-dev libxcb-shape0-dev libxcb-xfixes0-dev 
-sudo apt-get install -y gobuster onedrive enum4linux nbtscan nikto nmap oscanner smbclient smbmap smtp-user-enum snmp sslscan whatweb
+sudo apt-get install -y gobuster onedrive enum4linux nbtscan nikto nmap oscanner smbclient smbmap smtp-user-enum snmp sslscan whatweb feroxbuster
 sudo apt-get install -y cargo
 source $HOME/.cargo/env
 clear
@@ -62,7 +62,7 @@ clear
 #GitHub Tools Install
 echo -e "\e[41mNOTICE\e[0m"
 read -s -n 1 -p "Beginning tool installs. Press ANY key to continue."
-cargo install rustscan feroxbuster
+cargo install rustscan
 sudo curl -sL https://api.github.com/repos/carlospolop/PEASS-ng/releases/latest | jq -r ".assets[].browser_download_url" >> peass
 sudo curl -sL https://api.github.com/repos/DominicBreuker/pspy/releases/latest | jq -r ".assets[].browser_download_url" >> pspy
 sudo curl -sL https://api.github.com/repos/ropnop/kerbrute/releases/latest | jq -r ".assets[].browser_download_url" >> kerbrute
