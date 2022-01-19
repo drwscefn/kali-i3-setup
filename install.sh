@@ -19,6 +19,7 @@ echo -e ""
 sudo nano /etc/apt/sources.list
 clear
 cat /etc/apt/sources.list
+echo -e ""
 read -s -n 1 -p "Confirm you see the items that were copied earlier before proceeding with the install."
 
 #Kali Tool Installs
