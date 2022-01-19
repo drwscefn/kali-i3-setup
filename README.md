@@ -68,6 +68,12 @@ sudo mousepad ~/.fehbg
 #Updated to pull directly from acpi as my battery information was not displaying correctly.
 sudo mousepad ~/.config/i3/i3blocks.conf
 ```
+####  Fix Screen Resolution Copy/Paste VM Workstation 16 Player
+```bash
+apt-get install open-vm-tools
+sudo apt install -y --reinstall open-vm-tools-desktop fuse3
+sudo reboot -f
+```
 
 ## i3 Hotkeys
 
@@ -76,12 +82,11 @@ sudo mousepad ~/.config/i3/i3blocks.conf
 |-----------------------|-------------------------------|
 | `WIN`                 | Default modifier key.         |
 | `Ctrl` + Enter*       | Spawn new terminal in PWD.    |
-| `WIN` + Enter         | Spawn new terminal.           |
+| `WIN` + Enter         | Spawn new terminal in Home.   |
 | `WIN` + D             | Launch a Program.             |
 | `WIN` + Shift + Q     | Kill a focused window.        |
 | Mouse + `WIN`         | Drag floating windows around. |
-| `WIN` + Enter         | Spawn terminal window.        |
-| `WIN` + F             | Launch Fullscreen.            |
+| `WIN` + F             | Launch Selected Fullscreen.   |
 | `WIN` + `Shift` + 1-0 | Move container (focused).     |
 | `WIN` + N             | Rename Container (Use #:).    |
 | `WIN` + 1-0           | Switch to new Workspace.      |
@@ -112,7 +117,6 @@ sudo mousepad ~/.config/i3/i3blocks.conf
 |------------|----------------|
 | `WIN` + V  | Split Vertical |
 | `WIN` + H  | Split Horizon  |
-
 
 ### Other
 | Command            |Description             |
