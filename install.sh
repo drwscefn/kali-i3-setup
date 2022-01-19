@@ -20,7 +20,8 @@ sudo nano /etc/apt/sources.list
 clear
 cat /etc/apt/sources.list
 echo -e ""
-read -s -n 1 -p "Confirm you see the items that were copied earlier before proceeding with the install."
+read -s -n 1 -p "Confirm you see the items that were copied earlier before proceeding with the install. Press ANY key to continue."
+clear
 
 #Kali Tool Installs
 sudo apt-get install -y build-essential checkinstall
@@ -61,7 +62,6 @@ clear
 #GitHub Tools Install
 echo -e "\e[41mNOTICE\e[0m"
 read -s -n 1 -p "Beginning tool installs. Press ANY key to continue."
-curl https://sh.rustup.rs -sSf | sh
 cargo install rustscan feroxbuster
 sudo curl -sL https://api.github.com/repos/carlospolop/PEASS-ng/releases/latest | jq -r ".assets[].browser_download_url" >> peass
 sudo curl -sL https://api.github.com/repos/DominicBreuker/pspy/releases/latest | jq -r ".assets[].browser_download_url" >> pspy
