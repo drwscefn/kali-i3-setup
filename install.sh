@@ -32,7 +32,14 @@ sudo apt-get install -y crackmapexec gobuster onedrive enum4linux nbtscan nikto 
 source $HOME/.cargo/env
 clear
 
-#Custom Config Installs
+#Custom Configs/Appearance Installs
+echo -e "\e[41mOTICE\e[0m"
+echo "Your bash/zshrc configs will be overwritten and located in the home directory with .bak."
+read -s -n 1 -p "Press ANY key to continue."
+sudo mv ~/.zshrc ~/zshrc.bak
+sudo mv ~/.bashrc ~/bashrc.bak
+sudo mv .bashrc .zshrc ~/
+mkdir -p ~/htb/
 mkdir -p ~/.config/i3 ~/.config/compton ~/.config/rofi ~/.config/alacritty ~/.wallpaper
 sudo mv .rustscan.toml
 sudo mv .config/i3/config ~/.config/i3/config
@@ -49,7 +56,7 @@ clear
 
 #GitHub Tools Install
 echo -e "\e[41mNOTICE\e[0m"
-read -s -n 1 -p "Beginning GitHub tool installs. Press ANY key to continue."
+read -s -n 1 -p "Beginning Cargo/GitHub tool installs. Press ANY key to continue."
 cargo install rustscan
 sudo curl -sL https://api.github.com/repos/carlospolop/PEASS-ng/releases/latest | jq -r ".assets[].browser_download_url" >> peass
 sudo curl -sL https://api.github.com/repos/DominicBreuker/pspy/releases/latest | jq -r ".assets[].browser_download_url" >> pspy
@@ -101,11 +108,7 @@ cd nerd-fonts
 sudo chmod +x install.sh
 ./install.sh
 echo -e "\e[41mOTICE\e[0m"
-echo "After the script is done a reboot will occur. On the login screen select i3 (top right corner) on the login screen. Your bash/zshrc configs will also be overwritten and located in the home directory with .bak. Once on the desktop use the Github readme for more information."
+echo "After the script is done a reboot will occur. On the login screen select i3 (top right corner) on the login screen. Once on the desktop use the Github readme for more information."
 read -s -n 1 -p "Press ANY key to continue."
 cd ..
-sudo mv ~/.zshrc ~/zshrc.bak
-sudo mv ~/.bashrc ~/bashrc.bak
-sudo mv .bashrc .zshrc ~/
-mkdir ~/htb/
 sudo reboot
