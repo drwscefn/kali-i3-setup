@@ -107,4 +107,5 @@ cd ..
 sudo mv ~/.zshrc ~/zshrc.bak
 sudo mv ~/.bashrc ~/bashrc.bak
 sudo mv .bashrc .zshrc ~/
+mkdir ~/htb/
 sudo reboot
