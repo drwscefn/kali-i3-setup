@@ -87,6 +87,7 @@ sudo git clone https://github.com/Anon-Exploiter/SUID3NUM.git suidenum
 sudo git clone https://github.com/commixproject/commix.git commix
 sudo git clone https://github.com/micahvandeusen/gMSADumper gmsadumper
 sudo git clone https://github.com/Flangvik/SharpCollection sharp
+sudo git clone https://github.com/TH3xACE/SUDO_KILLER sudokiller
 sudo git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git
 sudo mv zsh-autocomplete /usr/share/
 sudo git clone https://github.com/jwilm/alacritty
