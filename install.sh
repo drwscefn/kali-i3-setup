@@ -28,7 +28,7 @@ sudo apt-get install -y build-essential checkinstall autoconf automake autotools
 sudo apt-get install -y libx11-dev freeglut3-dev jq arandr libxcb-shape0-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev xcb libxcb1-dev libxcb-icccm4-dev libyajl-dev libev-dev libxcb-xkb-dev libxcb-cursor-dev libxkbcommon-dev libxcb-xinerama0-dev libxkbcommon-x11-dev libstartup-notification0-dev libxcb-randr0-dev libxcb-xrm0 libxcb-xrm-dev libxcb-render-util0-dev libxcb-shape0-dev libxcb-xfixes0-dev
 sudo apt-get install -y arc-theme papirus-icon-theme feh unclutter compton imagemagick python3-pip rofi
 sudo apt-get install -y i3blocks i3status i3 i3-wm
-sudo apt-get install -y crackmapexec gobuster onedrive enum4linux nbtscan nikto nmap oscanner smbclient smbmap smtp-user-enum snmp sslscan whatweb feroxbuster flameshot bloodhound neo4j cargo exiftool
+sudo apt-get install -y crackmapexec gobuster onedrive enum4linux nbtscan nikto nmap oscanner smbclient smbmap smtp-user-enum snmp sslscan whatweb feroxbuster flameshot bloodhound neo4j cargo exiftool chisel
 source $HOME/.cargo/env
 clear
 
