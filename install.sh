@@ -2,34 +2,33 @@
 
 echo -e "\e[41mPwnBox Install\e[0m"
 echo -e "\e[41mBased off xct/clean and theGuildHall/pwnbox\e[0m"
-echo -e "\e[41mUpdated 01.19.2022 \e[24m"
+echo -e "\e[41mUpdated 07.12.2023 \e[24m"
 echo -e "\e[41mBy:Christopher Soehnlein | https://IslandDog.ky \e[0m"
-read -s -n 1 -p "Tested with Kali 2021.4A - Press ANY key to continue."
+read -s -n 1 -p "Tested with Kali 2023.2 - VMWare - Press ANY key to continue."
 echo ""
 
-#Kali Linux 2022 Install
-echo -e "Nano is about to launch, copy the following sources before proceeding with the install"
-echo ""
-echo -e "deb http://http.kali.org/kali kali main contrib non-free"
-echo -e "deb-src http://http.kali.org/kali kali main contrib non-free"
-echo -e "deb http://security.kali.org/kali-security kali/updates main contrib non-free"
-echo -e "deb-src http://security.kali.org/kali-security kali/updates main contrib non-free"
-read -s -n 1 -p "Press ANY key after copying the 4 lines above. Use Ctrl+Shift+V to Paste. Use Ctrl+X to Save in Nano."
-echo -e ""
-sudo nano /etc/apt/sources.list
-clear
-cat /etc/apt/sources.list
-echo -e ""
-read -s -n 1 -p "Please Confirm you see the items that were copied earlier before proceeding with the install. Press ANY key to continue."
-clear
+#Add in Section about pre-Installing Rust as it breaks normally.
+echo -e "\e[41mOTICE\e[0m"
+echo "Issues with Alacritty build require it to be installed differently. Instructions should run automatically however if you encounter issues check the README."
+read -s -n 1 -p "Press ANY key to continue."
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source "$HOME/.cargo/env"
+sudo git clone https://github.com/jwilm/alacritty
+cd alacritty
+rustup override set stable
+sudo rustup override set stable
+cargo build --release && sudo cp target/release/alacritty /usr/local/bin
+cd ..
 
+rustup default 1.7.0
 #Kali Repo Installs
+sudo apt-get update
 sudo apt-get install -y build-essential checkinstall autoconf automake autotools-dev m4 meson
+sudo apt install cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
 sudo apt-get install -y libx11-dev freeglut3-dev jq arandr libxcb-shape0-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev xcb libxcb1-dev libxcb-icccm4-dev libyajl-dev libev-dev libxcb-xkb-dev libxcb-cursor-dev libxkbcommon-dev libxcb-xinerama0-dev libxkbcommon-x11-dev libstartup-notification0-dev libxcb-randr0-dev libxcb-xrm0 libxcb-xrm-dev libxcb-render-util0-dev libxcb-shape0-dev libxcb-xfixes0-dev
 sudo apt-get install -y arc-theme papirus-icon-theme feh unclutter compton imagemagick python3-pip rofi
 sudo apt-get install -y i3blocks i3status i3 i3-wm
-sudo apt-get install -y crackmapexec gobuster onedrive enum4linux nbtscan nikto nmap oscanner smbclient smbmap smtp-user-enum snmp sslscan whatweb feroxbuster flameshot bloodhound neo4j cargo exiftool chisel
-source $HOME/.cargo/env
+sudo apt-get install -y gobuster onedrive oscanner smtp-user-enum snmp feroxbuster flameshot bloodhound neo4j cargo exiftool chisel
 clear
 
 #Custom Configs/Appearance Installs
@@ -79,7 +78,6 @@ sudo git clone https://github.com/rebootuser/LinEnum linenum
 sudo git clone https://github.com/M4ximuss/Powerless powerless
 sudo git clone https://github.com/ivan-sincek/php-reverse-shell.git webshells
 sudo git clone https://github.com/samratashok/nishang.git nishang
-sudo git clone https://github.com/danielmiessler/SecLists.git seclists
 sudo git clone https://github.com/itm4n/PrivescCheck.git privesccheck
 sudo git clone https://github.com/stealthcopter/deepce.git docker-enum
 sudo git clone https://github.com/dirkjanm/krbrelayx.git krbrelayx
@@ -90,12 +88,8 @@ sudo git clone https://github.com/Flangvik/SharpCollection sharp
 sudo git clone https://github.com/TH3xACE/SUDO_KILLER sudokiller
 sudo git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git
 sudo mv zsh-autocomplete /usr/share/
-sudo git clone https://github.com/jwilm/alacritty
-cd alacritty
-sudo cargo build --release && sudo cp target/release/alacritty /usr/local/bin
-cd ..
 sudo git clone https://www.github.com/Airblader/i3 i3-gaps
-cd i3-gaps && sudo mkdir -p build && cd build && sudo meson ..
+cd i3-gaps && sudo mkdir -p build && cd build && sudo meson setup ..
 sudo ninja
 sudo ninja install
 cd ~
