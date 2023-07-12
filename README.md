@@ -9,7 +9,6 @@ Check out my notes section here https://github.com/islanddog/notes
 
 ## Before You Begin!! (Bundled into script)
 ```bash
-read -s -n 1 -p "Press ANY key to continue."
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source "$HOME/.cargo/env"
 sudo git clone https://github.com/jwilm/alacritty
@@ -17,7 +16,6 @@ cd alacritty
 rustup override set stable
 sudo rustup override set stable
 cargo build --release && sudo cp target/release/alacritty /usr/local/bin
-cd ..
 ```
 Then proceed with installation below. This might change in the future just testing with newest build.
 
