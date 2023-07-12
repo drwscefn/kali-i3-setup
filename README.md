@@ -7,7 +7,7 @@ Check out my notes section here https://github.com/islanddog/notes
 
 ![image](https://user-images.githubusercontent.com/16761753/132256835-b6050c7a-6c36-416d-9fdc-1fb001ed0095.png)
 
-##Sources
+## Sources
 The sources from the previous version are no longer required. You might need to clear out your source list file to only include the default kali provided line.
 ```bash
 sudo nano /etc/apt/sources.list
