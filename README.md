@@ -9,19 +9,15 @@ Check out my notes section here https://github.com/islanddog/notes
 
 ## Before You Begin!! (Bundled into script)
 ```bash
-sudo apt-get install build-essential
-sudo apt-get install build-essential checkinstall
-sudo apt-get install autoconf automake autotools-dev m4
-sudo apt-get install libx11-dev
-sudo apt-get install freeglut3-dev
-sudo nano /etc/apt/sources.list
-```
-In nano:
-```bash
-deb http://http.kali.org/kali kali main contrib non-free
-deb-src http://http.kali.org/kali kali main contrib non-free
-deb http://security.kali.org/kali-security kali/updates main contrib non-free
-deb-src http://security.kali.org/kali-security kali/updates main contrib non-free 
+read -s -n 1 -p "Press ANY key to continue."
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source "$HOME/.cargo/env"
+sudo git clone https://github.com/jwilm/alacritty
+cd alacritty
+rustup override set stable
+sudo rustup override set stable
+cargo build --release && sudo cp target/release/alacritty /usr/local/bin
+cd ..
 ```
 Then proceed with installation below. This might change in the future just testing with newest build.
 
