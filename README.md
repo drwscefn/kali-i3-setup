@@ -21,7 +21,7 @@ deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmwa
 ```
 
 ## Alacritty Install (Bundled into script but might require manual intervention)
-Instructions for below were taken from the following - [Alacritty - Install Debian]([https://github.com/theGuildHall/pwnbox](https://github.com/alacritty/alacritty/blob/master/INSTALL.md#debianubuntu) and [Alacritty - Building from Source](https://github.com/alacritty/alacritty/blob/master/INSTALL.md#clone-the-source-code). It is bundled into the script (at the top) but if you run into issues refer to the link.
+Instructions for below were taken from the following - [Alacritty - Install Debian](https://github.com/alacritty/alacritty/blob/master/INSTALL.md#debianubuntu) and [Alacritty - Building from Source](https://github.com/alacritty/alacritty/blob/master/INSTALL.md#clone-the-source-code). It is bundled into the script (at the top) but if you run into issues refer to the link.
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source "$HOME/.cargo/env"
