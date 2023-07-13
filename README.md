@@ -21,7 +21,7 @@ deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmwa
 ```
 
 ## Alacritty Install (Bundled into script but might require manual intervention)
-Instructions for below were taken from the following - [Alacritty - Install Debian]([https://github.com/theGuildHall/pwnbox](https://github.com/alacritty/alacritty/blob/master/INSTALL.md#debianubuntu)) and [Alacritty - Building from Source](https://github.com/alacritty/alacritty/blob/master/INSTALL.md#clone-the-source-code). It is bundled into the script (at the top) but if you run into issues refer to the link.
+Instructions for below were taken from the following - [Alacritty - Install Debian]([https://github.com/theGuildHall/pwnbox](https://github.com/alacritty/alacritty/blob/master/INSTALL.md#debianubuntu) and [Alacritty - Building from Source](https://github.com/alacritty/alacritty/blob/master/INSTALL.md#clone-the-source-code). It is bundled into the script (at the top) but if you run into issues refer to the link.
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source "$HOME/.cargo/env"
@@ -81,6 +81,20 @@ sudo mousepad ~/.config/i3/i3blocks.conf
 apt-get install open-vm-tools
 sudo apt install -y --reinstall open-vm-tools-desktop fuse3
 sudo reboot -f
+```
+
+####  Change HTB folder location - Change 3rd line of [vpnserver.sh](https://github.com/islanddog/kali-clean-pwnbox/blob/main/vpnserver.sh)
+```bash
+#!/bin/bash
+htbip=$(ip addr | grep tun0 | grep inet | grep 10. | tr -s " " | cut -d " " -f 3 | cut -d "/" -f 1)
+myip=$(cat ~/Documents/htb/*.ovpn | grep "remote " | cut -d " " -f 2 | cut -d "." -f 1 | cut -d "-" -f 2-)
+
+if [[ $htbip == *"10."* ]]
+then
+   echo "$myip"
+else
+   echo ""
+fi
 ```
 
 ## i3 Hotkeys
