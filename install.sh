@@ -40,7 +40,7 @@ sudo mv ~/.bashrc ~/bashrc.bak
 sudo mv .bashrc .zshrc ~/
 mkdir -p ~/htb/
 mkdir -p ~/.config/i3 ~/.config/compton ~/.config/rofi ~/.config/alacritty ~/.config/feroxbuster ~/.wallpaper
-sudo mv .rustscan.toml
+sudo mv .rustscan.toml ~/
 sudo mv .config/i3/config ~/.config/i3/config
 sudo mv .config/feroxbuster/ferox-config.toml ~/.config/feroxbuster/ferox-config.toml
 sudo mv .config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
