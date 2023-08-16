@@ -105,6 +105,7 @@ fi
 | `WIN`                 | Default modifier key.         |
 | `Ctrl` + Enter*       | Spawn new terminal in PWD.    |
 | `WIN` + Enter         | Spawn new terminal in Home.   |
+| 'Alt' + Down Arrow    | Goes to autofill menu.        |
 | `WIN` + D             | Launch a Program.             |
 | `WIN` + Shift + Q     | Kill a focused window.        |
 | Mouse + `WIN`         | Drag floating windows around. |
