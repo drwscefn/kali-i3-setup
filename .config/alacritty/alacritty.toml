@@ -5,40 +5,80 @@ animation = "EaseOutExpo"
 color = "0xffffff"
 duration = 0
 
+# Dark Pride
+
+
+
+# Primary colors
 [colors]
 draw_bold_text_with_bright_colors = true
-indexed_colors = []
-
-[colors.bright]
-black = "0x666666"
-blue = "0x7aa6da"
-cyan = "0x54ced6"
-green = "0x9ec400"
-magenta = "0xb77ee0"
-red = "0xff3334"
-white = "0xffffff"
-yellow = "0xe7c547"
-
-[colors.normal]
-black = "0x000000"
-blue = "0x7aa6da"
-cyan = "0x70c0ba"
-green = "0xb9ca4a"
-magenta = "0xc397d8"
-red = "0xd54e53"
-white = "0xeaeaea"
-yellow = "0xe6c547"
+#indexed_colors = []
 
 [colors.primary]
-background = "0x000000"
-foreground = "0xeaeaea"
+background = '#0d0d1b'
+foreground = '#ccccce'
+
+# Colors used for 'custom_cursor_colors'
+[colors.cursor]
+text = '#bbbbbb'
+cursor = '#ff0017'
+
+# Colors 0 through 7
+[colors.normal]
+black = '#282828'
+red = '#ca1444'
+green = '#789aba'
+yellow = '#b3879f'
+blue = '#95569b'
+magenta = '#cb6fa1'
+cyan = '#fb6e93'
+white = '#cf98c1'
+
+# Colors 8 through 15
+[colors.bright]
+black = '#98218e'
+red = '#cb515d'
+green = '#5a87b1'
+yellow = '#9c61ab'
+blue = '#9a77b1'
+magenta = '#f2a297'
+cyan = '#f4436f'
+white = '#ebdbb2'
+
+#[colors]
+#draw_bold_text_with_bright_colors = true
+#indexed_colors = []
+
+#[colors.bright]
+#black = "0x666666"
+#blue = "0x7aa6da"
+#cyan = "0x54ced6"
+#green = "0x9ec400"
+#magenta = "0xb77ee0"
+#red = "0xff3334"
+#white = "0xffffff"
+#yellow = "0xe7c547"
+
+#[colors.normal]
+#black = "0x000000"
+#blue = "0x7aa6da"
+#cyan = "0x70c0ba"
+#green = "0xb9ca4a"
+#magenta = "0xc397d8"
+#red = "0xd54e53"
+#white = "0xeaeaea"
+#yellow = "0xe6c547"
+
+#[colors.primary]
+#background = "0x000000"
+#foreground = "0xeaeaea"
 
 [cursor]
 style = "Block"
 unfocused_hollow = true
 
 [font]
-size = 11.0
+size = 9.0
 
 [font.bold]
 family = "Hack"
@@ -153,6 +193,11 @@ chars = "\u007F"
 key = "Back"
 
 [[keyboard.bindings]]
+chars = "\u001b\u007f"
+key = "Back"
+mods = "Control"
+
+[[keyboard.bindings]]
 chars = "\u001B\u007F"
 key = "Back"
 mods = "Alt"
@@ -166,12 +211,17 @@ chars = "\u001B[3~"
 key = "Delete"
 
 [[keyboard.bindings]]
+chars = "\u001b\u007f"
+key = "Delete"
+mods = "Control"
+
+[[keyboard.bindings]]
 chars = "\u001B[1;2D"
 key = "Left"
 mods = "Shift"
 
 [[keyboard.bindings]]
-chars = "\u001B[1;5D"
+chars = "\u001BB"
 key = "Left"
 mods = "Control"
 
@@ -196,7 +246,7 @@ key = "Right"
 mods = "Shift"
 
 [[keyboard.bindings]]
-chars = "\u001B[1;5C"
+chars = "\u001BF"
 key = "Right"
 mods = "Control"
 
@@ -577,6 +627,8 @@ semantic_escape_chars = ",│`|:\"' ()[]{}<>"
 [window]
 decorations = "full"
 dynamic_padding = true
+opacity = 1
+blur = true
 
 [window.dimensions]
 columns = 0
