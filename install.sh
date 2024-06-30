@@ -20,6 +20,10 @@ sudo rustup override set stable
 cargo build --release && sudo cp target/release/alacritty /usr/local/bin
 cd ..
 
+#SublimeText
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/sublimehq-archive.gpg > /dev/null
+echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+
 rustup default 1.7.0
 #Kali Repo Installs
 sudo apt-get update
@@ -28,6 +32,8 @@ sudo apt install cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfi
 sudo apt-get install -y libx11-dev freeglut3-dev jq arandr libxcb-shape0-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev xcb libxcb1-dev libxcb-icccm4-dev libyajl-dev libev-dev libxcb-xkb-dev libxcb-cursor-dev libxkbcommon-dev libxcb-xinerama0-dev libxkbcommon-x11-dev libstartup-notification0-dev libxcb-randr0-dev libxcb-xrm0 libxcb-xrm-dev libxcb-render-util0-dev libxcb-shape0-dev libxcb-xfixes0-dev
 sudo apt-get install -y arc-theme papirus-icon-theme feh unclutter compton imagemagick python3-pip rofi
 sudo apt-get install -y i3blocks i3status i3 i3-wm
+sudo apt-get install -y sublime-text
+sudo apt-get install -y pipx
 sudo apt-get install -y gobuster onedrive oscanner smtp-user-enum snmp feroxbuster flameshot bloodhound neo4j cargo exiftool chisel
 clear
 
@@ -83,9 +89,9 @@ sudo git clone https://github.com/stealthcopter/deepce.git docker-enum
 sudo git clone https://github.com/dirkjanm/krbrelayx.git krbrelayx
 sudo git clone https://github.com/Anon-Exploiter/SUID3NUM.git suidenum
 sudo git clone https://github.com/commixproject/commix.git commix
-sudo git clone https://github.com/micahvandeusen/gMSADumper gmsadumper
-sudo git clone https://github.com/Flangvik/SharpCollection sharp
-sudo git clone https://github.com/TH3xACE/SUDO_KILLER sudokiller
+sudo git clone https://github.com/micahvandeusen/gMSADumper.git gmsadumper
+sudo git clone https://github.com/Flangvik/SharpCollection.git sharp
+sudo git clone https://github.com/TH3xACE/SUDO_KILLER.git sudokiller
 sudo git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git
 sudo mv zsh-autocomplete /usr/share/
 sudo git clone https://www.github.com/Airblader/i3 i3-gaps
@@ -94,6 +100,9 @@ sudo ninja
 sudo ninja install
 cd ~
 pip3 install pywal bloodhound
+pipx install git+https://github.com/fortra/impacket.git 
+pipx install donut-shellcode
+pipx install bloodyAD
 
 #NerdFonts Install/Reboot
 echo -e "\e[41mNOTICE\e[0m"
