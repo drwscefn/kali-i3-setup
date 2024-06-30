@@ -103,6 +103,7 @@ pip3 install pywal bloodhound
 pipx install git+https://github.com/fortra/impacket.git 
 pipx install donut-shellcode
 pipx install bloodyAD
+pipx install git+https://github.com/Pennyw0rth/NetExec
 
 #NerdFonts Install/Reboot
 echo -e "\e[41mNOTICE\e[0m"
