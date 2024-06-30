@@ -1,7 +1,7 @@
 # XCT Kali
 
 [xct/kali-clean](https://github.com/xct/kali-clean) and some personal tweaks/changes.
-Check out my notes section here https://github.com/islanddog/notes
+
 
 ## Sources
 The sources from the previous version are no longer required. You might need to clear out your source list file to only include the default kali provided line.
