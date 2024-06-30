@@ -1,11 +1,7 @@
-# XCT Kali - PwnBox Update 2023 Edition
+# XCT Kali
 
-[xct/kali-clean](https://github.com/xct/kali-clean) with [theGuildHall/pwnbox](https://github.com/theGuildHall/pwnbox) PwnBox additions and some personal tweaks/changes.
+[xct/kali-clean](https://github.com/xct/kali-clean) and some personal tweaks/changes.
 Check out my notes section here https://github.com/islanddog/notes
-
-![image](https://user-images.githubusercontent.com/16761753/132256475-1dabd629-b4a1-45c7-9698-387232f54add.png)
-
-![image](https://user-images.githubusercontent.com/16761753/132256835-b6050c7a-6c36-416d-9fdc-1fb001ed0095.png)
 
 ## Sources
 The sources from the previous version are no longer required. You might need to clear out your source list file to only include the default kali provided line.
