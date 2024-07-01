@@ -57,7 +57,7 @@ sudo mv .fehbg ~/.fehbg
 sudo mv .config/i3/clipboard_fix.sh ~/.config/i3/clipboard_fix.sh
 sudo mv vpnbash.sh vpnserver.sh /opt/
 sudo chmod +x /opt/vpn*.sh nerdfonts.sh
-sudo mv htb.jpg htb2.jpg ~/.wallpaper
+sudo mv wallpaper.jpg ~/.wallpaper
 clear
 
 #GitHub Tools Install
