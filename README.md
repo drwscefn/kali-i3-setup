@@ -1,8 +1,3 @@
-# XCT Kali
-
-[xct/kali-clean](https://github.com/xct/kali-clean) and some personal tweaks/changes.
-
-
 ## Sources
 The sources from the previous version are no longer required. You might need to clear out your source list file to only include the default kali provided line.
 ```bash
@@ -42,27 +37,7 @@ Nerd fonts full repo takes forever to download/install. Grab a subset or kick it
 
 ### Additional Notes
 
-#### Change Weather
-```bash
-#Line 80 - Change to yours - https://wttr.in/
-sudo vim ~/.config/i3/i3blocks.conf
-```
-
-#### VPN File Name (used for .zshrc/.bashrc UI)
-```bash
-#Line 3 - Change to name of your HTB VPN file.
-sudo vim /opt/vpnserver.sh
-```
-
-#### .bashrc and .zshrc
-Both configs are available in the Install directory. Merge/Overwrite for the HTB feel.
-```bash
-sudo mv -b .bashrc .zshrc ~/.
-```
-
 #### Change Background
-**xct -** To have the wallpaper set on every boot edit ~.fehbg
-Two wallpapers available from **theGuildHall*** if you want the HTB feel in ~/.wallpapers.
 ```bash
 sudo vim ~/.fehbg
 ```
@@ -151,3 +126,8 @@ fi
 | `WIN` + K  | Grow Height   |
 | `WIN` + L  | Shrink Height |
 | `WIN` + ;  | Grow Width    |
+
+
+#### Thanks
+[xct/kali-clean](https://github.com/xct/kali-clean) 
+[islanddog/kali-clean-pwnbox](https://github.com/islanddog/kali-clean-pwnbox)
