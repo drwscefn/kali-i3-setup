@@ -45,13 +45,13 @@ Nerd fonts full repo takes forever to download/install. Grab a subset or kick it
 #### Change Weather
 ```bash
 #Line 80 - Change to yours - https://wttr.in/
-sudo mousepad ~/.config/i3/i3blocks.conf
+sudo vim ~/.config/i3/i3blocks.conf
 ```
 
 #### VPN File Name (used for .zshrc/.bashrc UI)
 ```bash
 #Line 3 - Change to name of your HTB VPN file.
-sudo mousepad /opt/vpnserver.sh
+sudo vim /opt/vpnserver.sh
 ```
 
 #### .bashrc and .zshrc
@@ -64,13 +64,13 @@ sudo mv -b .bashrc .zshrc ~/.
 **xct -** To have the wallpaper set on every boot edit ~.fehbg
 Two wallpapers available from **theGuildHall*** if you want the HTB feel in ~/.wallpapers.
 ```bash
-sudo mousepad ~/.fehbg
+sudo vim ~/.fehbg
 ```
 
 #### Battery (laptop related)
 ```bash
 #Updated to pull directly from acpi as my battery information was not displaying correctly.
-sudo mousepad ~/.config/i3/i3blocks.conf
+sudo vim ~/.config/i3/i3blocks.conf
 ```
 ####  Fix Screen Resolution Copy/Paste VM Workstation 16 Player
 ```bash
