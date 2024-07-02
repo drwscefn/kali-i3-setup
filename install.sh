@@ -35,7 +35,7 @@ mkdir -p ~/.config/i3 ~/.config/compton ~/.config/rofi ~/.config/alacritty ~/.co
 sudo mv .rustscan.toml ~/
 sudo mv .config/i3/config ~/.config/i3/config
 sudo mv .config/feroxbuster/ferox-config.toml ~/.config/feroxbuster/ferox-config.toml
-sudo mv .config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
+sudo mv .config/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
 sudo mv .config/i3/i3blocks.conf ~/.config/i3/i3blocks.conf
 sudo mv .config/compton/compton.conf ~/.config/compton/compton.conf
 sudo mv .config/rofi/config ~/.config/rofi/config
