@@ -44,7 +44,6 @@ read -s -n 1 -p "Press ANY key to continue."
 sudo mv ~/.zshrc ~/zshrc.bak
 sudo mv ~/.bashrc ~/bashrc.bak
 sudo mv .bashrc .zshrc ~/
-mkdir -p ~/htb/
 mkdir -p ~/.config/i3 ~/.config/compton ~/.config/rofi ~/.config/alacritty ~/.config/feroxbuster ~/.wallpaper
 sudo mv .rustscan.toml ~/
 sudo mv .config/i3/config ~/.config/i3/config
