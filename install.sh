@@ -1,16 +1,5 @@
 #!/bin/bash
 
-echo -e "\e[41mPwnBox Install\e[0m"
-echo -e "\e[41mBased off xct/clean and theGuildHall/pwnbox\e[0m"
-echo -e "\e[41mUpdated 07.12.2023 \e[24m"
-echo -e "\e[41mBy:Christopher Soehnlein | https://IslandDog.ky \e[0m"
-read -s -n 1 -p "Tested with Kali 2023.2 - VMWare - Press ANY key to continue."
-echo ""
-
-#Add in Section about pre-Installing Rust as it breaks normally.
-echo -e "\e[41mOTICE\e[0m"
-echo "Issues with Alacritty build require it to be installed differently. Instructions should run automatically however if you encounter issues check the README."
-read -s -n 1 -p "Press ANY key to continue."
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source "$HOME/.cargo/env"
 sudo git clone https://github.com/jwilm/alacritty
