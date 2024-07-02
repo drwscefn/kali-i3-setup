@@ -30,9 +30,7 @@ clear
 echo -e "\e[41mOTICE\e[0m"
 echo "Your bash/zshrc configs will be overwritten and located in the home directory with .bak."
 read -s -n 1 -p "Press ANY key to continue."
-sudo mv ~/.zshrc ~/zshrc.bak
-sudo mv ~/.bashrc ~/bashrc.bak
-sudo mv .bashrc .zshrc ~/
+sudo mv .zshrc ~/
 mkdir -p ~/.config/i3 ~/.config/compton ~/.config/rofi ~/.config/alacritty ~/.config/feroxbuster ~/.wallpaper
 sudo mv .rustscan.toml ~/
 sudo mv .config/i3/config ~/.config/i3/config
