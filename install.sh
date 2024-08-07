@@ -8,7 +8,7 @@ sudo git clone https://github.com/jwilm/alacritty
 cd alacritty
 rustup override set stable
 sudo rustup override set stable
-cargo build --release && sudo cp target/release/alacritty /usr/local/bin
+sudo cargo build --release && sudo cp target/release/alacritty /usr/local/bin
 cd ..
 
 #SublimeText
