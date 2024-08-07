@@ -1,6 +1,6 @@
 #!/bin/bash
 #sudo echo "deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware
-  # deb-src http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware" > /etc/apt/sources.list
+#deb-src http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware" > /etc/apt/sources.list
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source "$HOME/.cargo/env"
@@ -25,7 +25,7 @@ sudo apt-get install -y arc-theme papirus-icon-theme feh unclutter compton image
 sudo apt-get install -y i3blocks i3status i3 i3-wm
 sudo apt-get install -y sublime-text
 sudo apt-get install -y pipx
-sudo apt-get install -y gobuster onedrive oscanner smtp-user-enum snmp feroxbuster flameshot bloodhound neo4j cargo exiftool chisel
+sudo apt-get install -y gobuster onedrive oscanner smtp-user-enum snmp feroxbuster flameshot bloodhound neo4j cargo exiftool chisel fzf
 clear
 
 #Custom Configs/Appearance Installs
@@ -92,17 +92,7 @@ pipx install git+https://github.com/fortra/impacket.git
 pipx install donut-shellcode
 pipx install bloodyAD
 pipx install git+https://github.com/Pennyw0rth/NetExec
+curl https://sliver.sh/install|sudo bash 
+pipx ensurepath
 
-#NerdFonts Install/Reboot
-echo -e "\e[41mNOTICE\e[0m"
-echo "Now installing Nerd Fonts. This process can take 20-25minutes."
-read -s -n 1 -p "Press ANY key to continue or Ctrl+C to Cancel and run this install at a later time."
-sudo git clone https://github.com/ryanoasis/nerd-fonts.git
-cd nerd-fonts
-sudo chmod +x install.sh
-./install.sh
-echo -e "\e[41mOTICE\e[0m"
-echo "After the script is done a reboot will occur. On the login screen select i3 (top right corner) on the login screen. Once on the desktop use the Github readme for more information."
-read -s -n 1 -p "Press ANY key to continue."
-cd ..
-sudo reboot
+sudo shutdown -r 0
