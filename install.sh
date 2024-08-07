@@ -1,7 +1,7 @@
 #!/bin/bash
 #sudo echo "deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware
   # deb-src http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware" > /etc/apt/sources.list
-"
+
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source "$HOME/.cargo/env"
 sudo git clone https://github.com/jwilm/alacritty
